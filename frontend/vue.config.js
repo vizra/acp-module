@@ -1,11 +1,5 @@
 module.exports = {
-  baseUrl: '/acp',
-
-  devServer: {
-    host: 'superv.dev.io'
-  },
-
-  // assetsDir: '/vendor/acp/',
+  baseUrl: '/',
 
   outputDir: '../../../../../public/acp/',
 
