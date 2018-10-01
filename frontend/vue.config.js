@@ -1,5 +1,5 @@
 module.exports = {
-  baseUrl: '/acp',
+  baseUrl: '/',
 
   outputDir: '../../../../../public/acp/',
 

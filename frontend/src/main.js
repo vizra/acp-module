@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import modules from './modules.js'
+import modules from '../../../../../../storage/superv/nucleo/modules.js'
 
 import SuperVCore, { SvRoot } from 'supervjs-core'
 import SuperVJSNucleo from 'supervjs-nucleo'
