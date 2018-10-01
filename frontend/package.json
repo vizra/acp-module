@@ -5,33 +5,20 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build-def": "vue-cli-service build",
-    "build": "rm -rf ../../../../../public/vendor/acp && vue-cli-service build --no-clean",
+    "build": "rm -rf ../../../../../public/acp && vue-cli-service build --no-clean",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "eslint-config-prettier": "^3.1.0",
-    "eslint-plugin-prettier": "^2.6.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "supervjs-nucleo": "0.1.0",
     "vue": "^2.5.17"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.3",
-    "@vue/cli-plugin-eslint": "^3.0.3",
     "@vue/cli-service": "^3.0.3",
     "vue-template-compiler": "^2.5.17"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
   },
   "browserslist": [
     "> 1%",

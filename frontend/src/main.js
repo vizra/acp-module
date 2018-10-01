@@ -1,16 +1,19 @@
 import Vue from 'vue'
-Vue.config.productionTip = false
+import modules from './modules.js'
 
 import SuperVCore, { SvRoot } from 'supervjs-core'
+import SuperVJSNucleo from 'supervjs-nucleo'
+
+Vue.config.productionTip = false
 Vue.use(SuperVCore, {
     config: {
       name: process.env.VUE_APP_NAME,
       apiUrl: process.env.VUE_APP_API_URL
-    }
+    },
+    modules: modules
   }
 )
 
-import SuperVJSNucleo from 'supervjs-nucleo'
 Vue.use(SuperVJSNucleo)
 
 new Vue({
