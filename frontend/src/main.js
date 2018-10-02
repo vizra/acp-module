@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import modules from '../../../../../../storage/superv/nucleo/modules.js'
 
-import SuperVCore, { SvRoot } from 'supervjs-core'
-import SuperVJSNucleo from 'supervjs-nucleo'
+import SuperVCore from 'supervjs-core'
+import { LayoutMixin } from 'supervjs-core/lib'
 
 Vue.config.productionTip = false
 Vue.use(SuperVCore, {
@@ -14,10 +14,9 @@ Vue.use(SuperVCore, {
   }
 )
 
-Vue.use(SuperVJSNucleo)
 
 new Vue({
   el: '#app',
   name: 'root',
-  mixins: [SvRoot]
+  mixins: [LayoutMixin]
 })
